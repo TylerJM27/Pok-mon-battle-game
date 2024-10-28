@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Pokemon Battle Game</title>
+</head>
+<body>
+    
+    <link rel="stylesheet" href="pokemon.css">
+    <div id="game-container">
+        <div class="d-flex justify-content-around align-items-center">
+        <img id="title-img" src="images/pokemon title.gif" alt="title">
+        </div>
+        <div class="text-center" id="rules">
+            <button id="start-game" type="button" onclick="startGame()">Let's Battle!</button>
+        </div>
+        <div class="text-center" id="pokemon-selection" style="display: none">
+            <h2>Please choose your pokemon.</h2>
+            <div id="bulbasaur">
+                <img src="images/bulbasaur front.gif" alt="Bulbasaur">
+                <p>The grass type pokemon: Bulbasaur</p>
+            </div>
+            <div id="charmander">
+                <img src="images/charmander front.gif" alt="Charmander">
+                <p>The fire type pokemon: Charmander</p>
+            </div>
+            <div id="squirtle">
+                <img src="images/squirtle front.gif" alt="Squirtle">
+                <p>The water type pokemon: Squirtle</p>
+            </div>
+        </div>
+        <div id="pokemon-battle"  style="display: none;">
+            <div  id="battle-arena">
+            <img id="battle-background" src="images/battle background.jpeg" alt="Battle background">
+                <div id="enemy-pokemon-health">
+                    <progress id="enemy-health" value ="" max=""></progress>
+                </div>
+                <div id="enemy-pokemon">
+                    
+                </div>
+                <div id="player-pokemon-health">
+                    <progress id="player-health" value="" max=""></progress>
+                </div>
+                <div id="player-pokemon">
+
+                </div>
+            </div>
+            <div class="text-center" id="battle-choices">
+                <button id="fight" type="button">FIGHT</button>
+                <button id="run" type="button">RUN</button>
+                <button id="bag" type="button">BAG</button>
+                <button id="jump" type="button">JUMP</button>
+            </div>
+            
+        </div>
+        <div id="bag-div" style="display: none;">
+            <p>CHOOSE AN ITEM TO USE</p>
+            <button id="potion" type="button">Potion</button>
+        </div>
+    <script src="new-pokemon.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</div>
+
+</body>
+</html>
